@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num1">Numero 1</label>
+    <input id="num1" type="number">
+
+    <label for="num2">Numero 2</label>
+    <input id="num2" type="number">
+
+    <button type="button" onclick="sumar()">Sumar</button>
+
+    <script>
+
+        function sumar(){
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+            c = parseInt(a)+ parseFloat(b);
+
+
+            if(c>10){
+                alert("La suma es mayor a 10")
+            }
+            else{
+                alert("la suma es menor  a 10")
+            }
+        }
+        
+    </script>
+</body>
+</html>

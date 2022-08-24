@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multiplos</h1>
+
+    <button onclick="Cal()">Evaluar</button>
+
+    <script>
+        function Cal(){
+                let a = prompt("ingrese valor 1")
+
+                if(a===""){
+                    alert("el campo esta vacio");
+                }
+                else if(isNaN(a)===true){
+                    alert("solo se permiten numeros")
+                }
+                else{
+                    let b = prompt("Ingrese valor 2") 
+                    if(b===""){
+                        alert("El campo esta vacio")
+                    }
+                    else if(isNaN(b)===true){
+                        alert("Solo se permiten numeros")
+                    }
+                    else{
+                        if((a%b === 0)||(b%a === 0)){
+                            alert("son multiplos")
+                        }
+                        else{
+                            alert("no son multiplos")
+                        }
+                    }
+                }
+            }
+        
+        
+    </script>
+</body>
+</html>

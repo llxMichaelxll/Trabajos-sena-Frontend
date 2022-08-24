@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular Area</h1>
+    <button onclick="Cuadrado()">Cuadrado</button><br>
+    <button onclick="Circulo()">Circulo</button><br>
+    <button onclick="Triangulo()">Triangulo</button>
+
+
+    <script>
+
+            function Cuadrado(){
+                let a = prompt("Ingrese valor de Lado del cuadrado")
+
+                if(a===""){
+                    alert("el campo esta vacio");
+                }
+                else if(isNaN(a)===true){
+                    alert("solo se permiten numeros")
+                }
+                else{
+                    alert(parseInt(a)*parseInt(a));
+                }
+            }
+
+            function Circulo(){
+                let a = prompt("Ingrese valor de Radio delcirculo")
+                const pi = 3.14;
+
+                if(a===""){
+                    alert("el campo esta vacio");
+                }
+                else if(isNaN(a)===true){
+                    alert("solo se permiten numeros")
+                }
+                else{
+                    alert(parseInt(a)*parseInt(a)*parseInt(pi));
+                }
+            }
+
+            function Triangulo(){
+                let a = prompt("Ingrese valor de la base del Triangulo")
+
+                if(a===""){
+                    alert("el campo para base esta vacio");
+                }
+                else if(isNaN(a)===true){
+                    alert("solo se permiten numeros")
+                }
+                else{
+                    let b = prompt("Ingrese valor de altura del trianfulo")
+
+                        if(b===""){
+                            alert("el campo para altura esta vacio");
+                        }
+                        else if(isNaN(b)===true){
+                            alert("solo se permiten numeros")
+                        }
+                        else{
+                            alert((parseInt(a)*parseInt(b))/2)
+                        }
+                }
+            }
+            
+
+
+
+    </script>
+</body>
+</html>

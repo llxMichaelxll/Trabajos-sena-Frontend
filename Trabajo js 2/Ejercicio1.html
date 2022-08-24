@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="Edad">Edad</label>
+    <input id="Edad" type="number">
+
+    <label for="Nombre">Nombre</label>
+    <input id="Nombre" type="text">
+
+    <button type="button" onclick="Validar()">OK</button>
+
+    <script>
+
+        function Validar(){
+
+            let c = document.getElementById("Edad").value;
+            let a = document.getElementById("Nombre").value;
+            
+            if(c >18){
+                alert("Hola "+ a + " asi que tienes "+ c + " años, eres mayor de edad");
+            }
+            else{
+                alert("Hola "+ a + " asi que tienes "+ c + " años, eres menor de edad")
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>
