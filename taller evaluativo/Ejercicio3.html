@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+       
+
+        let operacion = prompt("Que operacion quieres hacer (1 para : sumar, 2 para : restar, 3 para : multiplicar, 4 para : dividir, 5 para : porcentaje)");
+        let a = prompt("valor 1")
+        let b = prompt("valor 2")
+
+        if(isNaN(operacion)===true){
+            alert("Solo valores del 1 al 5")
+        }
+        else if(parseInt(operacion) === 4 && parseInt(b) === 0 ){
+            alert("division inexacta, no se puede dividir entre 0")
+        }
+        else if(isNaN(a)===true || isNaN(b)===true) {
+            alert("digita solo numeros")
+        }
+        else{
+            switch(parseInt(operacion)){
+
+                case 1:
+                
+                console.log(parseInt(a)+parseInt(b));
+                break;
+
+                case 2:
+              
+                console.log(parseInt(a)-parseInt(b));
+                break;
+
+                case 3:
+              
+                console.log(parseInt(a)*parseInt(b))
+                break;
+
+                case 4:
+               
+                console.log(parseInt(a)/parseInt(b))
+                break;
+
+                case 5:
+               
+                console.log(((parseInt(a)*parseInt(b))/100) + "%")
+                break;
+
+                default: alert("operacion no valida");
+            }
+        }
+         
+    </script>
+</body>
+</html>

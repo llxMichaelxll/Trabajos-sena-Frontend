@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = prompt("digite testo")
+        let b = "";
+
+        if(a===""){
+            alert("no puede ser vacio")
+        }
+        else{
+            for(i=a.length-1; i>=0; i--){
+                 b = b + a[i];
+            }
+            if(a===b){
+                console.log("es palindroma")
+            }
+            else{
+                console.log("no es palindroma")
+            }
+        }
+
+        console.log(a+"               " + b)
+    </script>
+</body>
+</html>

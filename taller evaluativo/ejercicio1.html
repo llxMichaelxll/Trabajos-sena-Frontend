@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+alert("peliculas p1, p2, p3, p4, p5");
+
+let pelicula = prompt("Ingrese nombre de la pelicula");
+
+        
+
+            if(pelicula==="p1" || pelicula==="p2" || pelicula==="p3" || pelicula==="p4" || pelicula==="p5"){
+                let boleto = prompt("cuantos voletos")
+                if(parseInt(boleto)>5) {
+                    let descuento = (parseInt(boleto)*10000*5)/100
+                    let valor = (parseInt(boleto)*10000) - parseInt(descuento)
+                    alert("cuesta "+ valor);
+                    let pago = prompt("ingrese pago")
+                    if(parseInt(pago)<parseInt(valor)){
+                        alert("monto insuficiente")
+                    }
+                    else if(parseInt(pago)>valor){
+                        let vuelto = parseInt(pago) - parseInt(valor)
+                        alert("devuelta: " + vuelto + " y sus " + boleto + " boletos" )
+                    }
+                    else{
+                        alert("sus " + boleto + " boletos" )
+                    }
+                   
+                }
+                else{
+                    let valor = (parseInt(boleto)*10000)
+                    alert("cuesta "+ valor);
+                    let pago = prompt("ingrese pago")
+                    if(parseInt(pago)<parseInt(valor)){
+                        alert("monto insuficiente")
+                    }
+                    else if(parseInt(pago)>ParseInt(valor)){
+                        let vuelto = parseInt(pago) - parseInt(valor)
+                        alert("devuelta: " + vuelto + " y sus " + boleto + " boletos" )
+                    }
+                    else{
+                        alert("sus " + boleto + " boletos" )
+                    }
+
+                }
+            }
+            else{
+                alert("la pelicula " + pelicula + " no esta disponible")
+            }
+    </script>
+</body>
+</html>

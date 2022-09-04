@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let a = prompt("valor 1 mayor a 10")
+    let b = prompt ("valor 2 mayor a 10")
+    
+    if(isNaN(a)===true || isNaN(b)===true){
+        alert("Solo debes digitart numeros")
+    }
+    else if (a< 10 || b<10){
+        alert("valores deben de ser mayor a 10");L
+    }
+
+    else{
+        if(a>b){
+            for(i=0; i<=b; i=i+2){
+                if(i%2===0){
+                    console.log(i);
+                }
+            }
+        }
+        else{
+            for(i=0; i<=a; i=i+2){
+                if(i%2===0){
+                    console.log(i);
+                }
+            }
+        }
+    }
+
+    </script>
+</body>
+</html>
